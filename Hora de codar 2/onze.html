@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício onze</title>
+</head>
+<body>
+    <div>
+        <h4> <a href="inicio.html">Voltar</a></h4>
+    </div>
+</body>
+
+<script>
+   var valor1 = parseInt(prompt("Digite o primeiro valor:"));
+   var valor2 = parseInt(prompt("Digite o segundo valor:"));
+   var operacao = parseInt(prompt("Digite o número da operação desejada (1 para adição, 2 para subtração, 3 para divisão, 4 para multiplicação):"));
+
+   var resultado;
+
+    switch (operacao) {
+    case 1:
+        resultado = valor1 + valor2;
+        break;
+    case 2:
+        resultado = valor1 - valor2;
+        break;
+    case 3:
+        resultado = valor1 / valor2;
+        break;
+    case 4:
+        resultado = valor1 * valor2;
+        break;
+    default:
+        document.write("Operação inválida");
+    }
+
+    if (resultado !== undefined) {
+    document.write("O resultado da operação é: " + resultado);
+    }
+
+</script>
+
+</html>

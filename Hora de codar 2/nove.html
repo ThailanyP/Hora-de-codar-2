@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+</head>
+<body>
+    <div>
+        <h4> <a href="inicio.html">Voltar</a></h4>
+    </div>
+</body>
+
+<script>
+    var anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+    var anoAtual = new Date().getFullYear();
+    var idade = anoAtual - anoNascimento;
+
+    // verificar se a idade é maior ou menor que 16 que é a idade mínima para votar no Brasi
+    if (idade >= 16) {
+    document.write("Você poderá votar este ano");
+    } else {
+    document.write("Você não poderá votar este ano");
+    }
+</script>
+
+</html>
